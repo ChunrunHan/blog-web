@@ -1,11 +1,9 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from './views/Home.vue'
-const NProgress = require('nprogress')
-import 'nprogress/nprogress.css'
-
-Vue.use(VueRouter)
-
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import Home from './views/Home.vue';
+const NProgress = require('nprogress');
+import 'nprogress/nprogress.css';
+Vue.use(VueRouter);
 const router = new VueRouter({
     // mode: 'history',
     base: process.env.BASE_URL,
@@ -27,15 +25,13 @@ const router = new VueRouter({
             component: () => import('./views/detail.vue')
         }
     ]
-})
-
+});
 router.beforeEach((to, from, next) => {
-    NProgress.start()
-    next()
-})
-
+    NProgress.start();
+    next();
+});
 router.afterEach(() => {
-    NProgress.done()
-})
-
-export default router
+    NProgress.done();
+});
+export default router;
+//# sourceMappingURL=router.js.map
