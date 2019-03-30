@@ -15,7 +15,7 @@
           </div>
         </div>
         <div class="container">
-          <mavonEditor class="markdown" codeStyle="dark" :value="article.content" :toolbarsFlag="toolbarsFlag" :subfield="toolbarsFlag" defaultOpen="preview"></mavonEditor>
+          <mavonEditor class="markdown" :imageClick="no" codeStyle="dark" :value="article.content" :toolbarsFlag="toolbarsFlag" :subfield="toolbarsFlag" defaultOpen="preview"></mavonEditor>
           <div class="toc">
           </div>
         </div>
@@ -49,6 +49,7 @@ export default {
 
   },
   methods: {
+    no(){return},
     // 方法
     getArticleDetail(id) {
       getArticleDetailByid(id).then(res => {

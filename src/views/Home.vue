@@ -5,7 +5,7 @@
         <p slot="title" class="title">{{item.title}}<span class="date">{{item.createTime}}</span></p>
         <p>
           <mavonEditor class="markdown" codeStyle="dark" :value="item.content" :toolbarsFlag="toolbarsFlag"
-                       :subfield="toolbarsFlag" defaultOpen="preview"></mavonEditor>
+                       :subfield="toolbarsFlag" :imageClick="no" defaultOpen="preview"></mavonEditor>
         </p>
         <div class="read-list">
           <span class="read-more" @click="goDetail(item.id)">阅读全文>></span>
@@ -57,6 +57,7 @@ export default {
     }
   },
   methods: {
+    no(){return},
     changeRouter(route) {
       // console.log(route)
       // console.log("请求路由啊!!!!!!")
