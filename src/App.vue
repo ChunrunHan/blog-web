@@ -245,7 +245,7 @@ export default {
   border-radius: 100%;
   top: 74px;
   color: white;
-  z-index: 111111111;
+  z-index: 11111;
 }
 
 .rotate-icon {
@@ -276,7 +276,7 @@ export default {
 .sider {
   background: #ffffff !important;
   height: calc(100vh - 60px);
-  z-index: 1111111111;
+  z-index: 100;
   color: #515a6e;
 
   .avatar {
