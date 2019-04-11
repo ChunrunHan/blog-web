@@ -86,10 +86,11 @@ export default {
       this.tagid = ''
       let page = this.page
       getArticleList({page, keyword}).then(res => {
-        // console.log(res)
+        console.log(res)
         this.total = res.count
         res.list.forEach(item =>{
           item.content = item.content.replace(/.jpg/g,'.jpg/indexImg')
+          item.content = item.content.replace(/po8vwrl7r.bkt.clouddn.com/g,'hanchunrun.cn')
         })
         this.articleList = res.list
       })
@@ -136,6 +137,10 @@ export default {
       searchByCategoryId(classid, page).then(res => {
         // console.log(res)
         this.total = res.count
+        res.list.forEach(item =>{
+          item.content = item.content.replace(/.jpg/g,'.jpg/indexImg')
+          item.content = item.content.replace(/po8vwrl7r.bkt.clouddn.com/g,'hanchunrun.cn')
+        })
         this.articleList = res.list
       })
     },
@@ -145,6 +150,10 @@ export default {
       searchByTagId(tagid, page).then(res => {
         // console.log(res)
         this.total = res.count
+        res.list.forEach(item =>{
+          item.content = item.content.replace(/.jpg/g,'.jpg/indexImg')
+          item.content = item.content.replace(/po8vwrl7r.bkt.clouddn.com/g,'hanchunrun.cn')
+        })
         this.articleList = res.list
       })
     }

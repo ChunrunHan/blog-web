@@ -54,6 +54,7 @@ export default {
     getArticleDetail(id) {
       getArticleDetailByid(id).then(res => {
         // console.log(res)
+        res.content = res.content.replace(/po8vwrl7r.bkt.clouddn.com/g,'hanchunrun.cn')
         this.article = res
         this.loading = false
         this.$nextTick(() => {

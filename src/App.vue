@@ -46,7 +46,7 @@
           <Sider ref="side1" collapsible :collapsed-width="0" width="300" v-model="isCollapsed" hide-trigger
                  class="sider">
             <div @mouseleave="show2 = false" @mouseover="show2 = true">
-              <Avatar src="http://po8vwrl7r.bkt.clouddn.com/me.jpeg"
+              <Avatar src="http://hanchunrun.cn/me.jpeg"
                       :class="{'avatar':true,'animated':true,'bounceIn':show2}"/>
             </div>
             <div class="desc name">RAIN</div>
@@ -85,7 +85,7 @@
         <Content style="background: #f0f0f0;height: calc(100vh - 60px);">
           <div class='container-wrapper'>
             <div class="banner">
-              <img src="http://po8vwrl7r.bkt.clouddn.com/bg.png/webp" alt="">
+              <img src="http://hanchunrun.cn/bg.png/webp" alt="">
               <div class="text-wrapper">
                 <p>{{currentQuotes}}</p>
               </div>
@@ -225,7 +225,7 @@ export default {
     text-align: center;
     height: 60px;
     line-height: 60px;
-    background: url(http://po8vwrl7r.bkt.clouddn.com/bg.png/webp) no-repeat;
+    background: url(http://hanchunrun.cn/bg.png/webp) no-repeat;
     background-origin: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -311,7 +311,7 @@ export default {
 
   .priseNum {
     font-size: 20px;
-    background: url(http://po8vwrl7r.bkt.clouddn.com/bg.png) no-repeat;
+    background: url(http://hanchunrun.cn/bg.png) no-repeat;
     background-origin: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
