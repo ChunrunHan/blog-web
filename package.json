@@ -33,7 +33,6 @@
     "@vue/test-utils": "^1.0.0-beta.20",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
-    "compression-webpack-plugin": "^3.0.0",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
     "node-sass": "^4.9.0",
@@ -96,9 +95,5 @@
         "babelConfig": true
       }
     }
-  },
-  "main": "index.js",
-  "repository": "https://github.com/ChunrunHan/blog-web.git",
-  "author": "rain <534123074@qq.com>",
-  "license": "MIT"
+  }
 }
