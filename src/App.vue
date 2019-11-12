@@ -50,7 +50,7 @@
                       :class="{'avatar':true,'animated':true,'bounceIn':show2}"/>
             </div>
             <div class="desc name">RAIN</div>
-            <div class="desc">Stay hungry, Stay foolish!</div>
+            <div class="desc">千学万学，学做真人!</div>
             <div class="search">
               <Input search enter-button placeholder="根据标题搜索" v-model="keyword" @on-search="search"/>
               <div class="flex jc-between sider-icon">
@@ -165,11 +165,11 @@ export default {
       })
     },
     addPrise() {
-      let { priseNum } = this
       addPriseNum().then(res => {
-        console.log(res)
-        if(true){
-          this.priseNum = priseNum + 1
+        console.log("点赞结果",res)
+        if(res){
+          this.priseNum = this.priseNum + 1
+          console.log(this.priseNum)
         }
       })
     },
